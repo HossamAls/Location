@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع حسام</title>
+    <link rel="stylesheet" href="project.css">
+    <style>
+        /* الشريط الجانبي */
+        .sidebar {
+            height: 100vh;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            padding-top: 20px;
+            z-index: 1000;
+        }
+        .sidebar a {
+            padding: 15px 20px;
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            display: block;
+        }
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+        /* تعديل المحتوى ليكون بجانب الشريط */
+        .main-content {
+            margin-left: 270px; /* عرض الشريط + مسافة */
+            padding: 20px;
+        }
+        /* تعديل بعض الألوان */
+        body {
+            background: linear-gradient(to right, rgba(85,85,85,0.5),rgba(213, 228, 238, 0.5));
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        /* تحسين مظهر الروابط في الجزء العلوي */
+        .top-nav {
+            text-align: center; 
+            background-color: #0e1115;
+            padding: 10px 0;
+        }
+        .top-nav a {
+            font-size: 40px;
+            text-decoration: none;
+            color: #faf8f8;
+            margin: 0 40px;
+        }
+        .top-nav a:hover {
+            color: #ff9900;
+        }
+        /* البطاقات */
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 80px;
+        }
+        .card {
+            background-color: rgb(245, 246, 246);
+            width: 500px;
+            height: 400px;
+            font-size: 25px;
+            text-align: center;
+            margin: 80px auto;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .card.dark {
+            background-color: rgb(28, 150, 140);
+            color: white;
+        }
+        .card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        .card.dark img {
+            width: 80px;
+            height: 80px;
+        }
+        .card a {
+            display: flex;
+            margin-top: 15px;
+            background: #303612;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            align-items: center;
+            justify-content: center;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- الشريط الجانبي -->
+    <div class="sidebar">
+        <a href="#">الرئيسية</a>
+        <a href="#">خدماتنا</a>
+        <a href="#">عن حسام</a>
+        <a href="#">تواصل معنا</a>
+    </div>
+
+    <div class="main-content">
+        <!-- شريط أعلى الصفحة -->
+        <div class="top-nav">
+            <a href="../html/index.html">خدماتنا</a>
+            <a href="#">تواصل معنا</a>
+        </div>
+
+        <!-- البطاقات -->
+        <div class="cards-container">
+
+            <div class="card">
+                <img src="images (7).jfif" alt="image">
+                <h3>تعلم البرمجة</h3>
+                <p>أساسيات البرمجة من الصفر حتى الاحتراف</p>
+                <a href="c:\Users\Owner\Downloads\imgres (7).htm">ابدأ الآن</a>
+            </div>
+
+            <div class="card dark">
+                <img src="porg.jfif" alt="image">
+                <h3>خدمات الأمن السيبراني</h3>
+                <p>حماية وتأمين بياناتك ضد الهجمات الإلكترونية</p>
+                <a href="#">اعرف أكثر</a>
+            </div>
+
+            <div class="card">
+                <img src="porg.jfif" alt="image">
+                <h3>تصميم وتطوير المواقع</h3>
+                <p>إنشاء مواقع عصرية وسريعة تتناسب مع احتياجاتك</p>
+                <a href="#">اكتشف المزيد</a>
+            </div>
+
+            <div class="card dark">
+                <img src="porg.jfif" alt="image">
+                <h3>تواصل معنا</h3>
+                <p>هل لديك استفسار؟ نحن هنا لمساعدتك</p>
+                <a href="#">أرسل رسالة</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

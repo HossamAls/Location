@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    svg {
+      width: 300px;
+      height: 300px;
+    }
+  </style>
+</head>
+<body>
+
+  <svg viewBox="0 0 200 200">
+    <defs>
+      <clipPath id="myClip" clip-rule="evenodd">
+        <!-- دائرتان داخل بعض -->
+        <circle cx="100" cy="100" r="80" />
+        <circle cx="100" cy="100" r="40" />
+      </clipPath>
+    </defs>
+
+    <!-- مستطيل مغطى بالكامل -->
+    <rect width="200" height="200" fill="green" clip-path="url(#myClip)" />
+  </svg>
+
+</body>
+</html>

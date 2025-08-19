@@ -1,0 +1,122 @@
+.logo_background{
+  background: linear-gradient(to right, #555, #0c1d28); /* اضافة لون خلفية لشعار */
+  height: 400px;
+  clip-path: ellipse(75% 100% at 50% 100%); /*يفعل قص للون من  */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+
+.site_logo{
+
+  background-image: url('./images/hossa.png');
+  background-repeat: no-repeat; /*تبعد التكرار حق الصورة */
+  background-position: center; /*تخلي الصورة في الوسط*/
+  background-size: contain; /*تحكم بحجم الصورة*/
+  height: 300px;
+  width: 50%px;
+/* clip-path: ellipse(75% 100% at 50% 100%); */
+
+}
+
+.the_tape{
+  text-align: center; background-color: #0e1115;
+}
+
+.the_tape_link{
+  font-size: 40px;
+        text-decoration: none;
+        color: #faf8f8;
+        margin-left: 40px;  /* ← هذه تضيف مسافة من اليسار */
+
+}
+
+
+
+.card_main{
+  display: flex; /*جعل البطاقات بجانب بعض.*/
+        justify-content: center; /**/
+        gap: 40px; /* مسافة بين البطاقات */
+        flex-wrap: wrap; /* يخليهم ينزلوا تحت لو الشاشة صغيرة */
+        margin-top: 80px;
+}
+
+
+.card{
+  background-color: rgb(245, 246, 246);
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    margin: 80px auto; /*من اجل يخلي الزاوية حق البطاقة منحنية شوية يجي شكله ضخم*/
+    border-radius: 20px;
+
+    display: flex; /*يستخدم لتوسيط المحتوى الذي داخل*/
+    flex-direction: column; /* يجعل المحتوى تحت بعض */
+    align-items: center; /* يخلي الصورة افقيأ في الوسط*/
+    justify-content: center; /*يخلي الصورة وسط  بس عموديآ*/
+}
+
+
+.card_wi{
+  background-color: rgb(28, 150, 140);
+    width: 500px;
+    height: 400px;
+    font-size: 25px;
+    text-align: center;
+    margin: 80px auto; /*من اجل يخلي الزاوية حق البطاقة منحنية شوية يجي شكله ضخم*/
+    border-radius: 20px;
+
+    display: flex; /*يستخدم لتوسيط المحتوى الذي داخل*/
+    flex-direction: column; /* يجعل المحتوى تحت بعض */
+    align-items: center; /* يخلي الصورة افقيأ في الوسط*/
+    justify-content: center; /*يخلي الصورة وسط  بس عموديآ*/
+}
+
+
+
+.imaeg{
+  width: 110px;
+    height: 110px;
+    border-radius: 50%; /* نخلي الصورة دائرية */
+    
+    margin-bottom: 15px; /*تفعل مسافة تحت الصورة*/
+}
+.card_button{
+  display: flex; /*حول الزر إلى flex box اشتي ارجع افهمه*/
+    width: 20px;
+    height: 20px;
+    
+    margin-top: 15px; /*فراغ فوق الزر */
+    background: #303612; /*لون مربع الزر */
+    color: white; /* لون الخط*/
+    padding: 10px 20px;
+    border-radius: 5px; /*يخلي الرز من الروايا منحنيات */
+    text-decoration: none; /*تبعد الخط الذي تحت الرابط*/
+  align-items: center;      /* توسيط عمودي */
+  justify-content: center;  /* توسيط أفقي */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
